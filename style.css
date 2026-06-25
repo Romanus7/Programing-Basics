@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #006994;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  background: #c7c6d0;
+  border: 1px solid #df4a4a;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 300px;
+  text-align: center;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: #1a1a1a;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.badges {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 1.25rem;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.badge.blue:hover   { background: #0C447C; color: #ffffff; }
+.badge.purple:hover { background: #3C3489; color: #ffffff; }
+.badge.green:hover  { background: #085041; color: #ffffff; }
+.badge.amber:hover  { background: #633806; color: #ffffff; }
+
+.badge.blue   { background: #E6F1FB; color: #0C447C; }
+.badge.purple { background: #EEEDFE; color: #3C3489; }
+.badge.green  { background: #E1F5EE; color: #085041; }
+.badge.amber  { background: #FAEEDA; color: #633806; }
+
+.info {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #666;
+}
+
+.info-item i {
+  font-size: 16px;
+}
+
+.info-item a {
+  color: #185FA5;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.info-item a:hover {
+  color: #006994;
+  text-decoration: underline;
+}
+
+.btn {
+  margin-top: 1.25rem;
+  width: 100%;
+  padding: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: transparent;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: block;
+  color: #1a1a1a;
+}
+
+.btn:hover {
+  background: #25D366;
+  color: #ffffff;
+  border-color: #25D366;
+}
