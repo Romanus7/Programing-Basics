@@ -8,26 +8,42 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #006994;
+  align-items: flex-start;
   font-family: Arial, sans-serif;
+  background-image: url('pic2.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 100%;
 }
 
 .card {
-  background: #c7c6d0;
-  border: 1px solid #df4a4a;
-  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.55);
+  border: none;
+  border-radius: 0;
   padding: 2rem;
-  width: 300px;
+  width: 100%;
+  min-height: 100vh;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .avatar {
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   overflow: hidden;
-  margin: 0 auto 1rem;
+  margin: 2rem auto 1rem;
+  border: 3px solid #ffffff;
+  transition: opacity 0.3s ease;
+}
+
+.avatar:hover {
+  opacity: 0.85;
 }
 
 .avatar img {
@@ -37,16 +53,19 @@ body {
 }
 
 .name {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 28px;
+  font-weight: 700;
   margin-bottom: 4px;
-  color: #1a1a1a;
+  color: #ffffff;
+  letter-spacing: 2px;
 }
 
 .subtitle {
-  font-size: 13px;
-  color: #888;
+  font-size: 14px;
+  color: #cccccc;
   margin-bottom: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .badges {
@@ -66,23 +85,25 @@ body {
   transition: all 0.2s ease;
 }
 
-.badge.blue:hover   { background: #0C447C; color: #ffffff; }
-.badge.purple:hover { background: #3C3489; color: #ffffff; }
-.badge.green:hover  { background: #085041; color: #ffffff; }
-.badge.amber:hover  { background: #633806; color: #ffffff; }
-
 .badge.blue   { background: #E6F1FB; color: #0C447C; }
 .badge.purple { background: #EEEDFE; color: #3C3489; }
 .badge.green  { background: #E1F5EE; color: #085041; }
 .badge.amber  { background: #FAEEDA; color: #633806; }
 
+.badge.blue:hover   { background: #0C447C; color: #ffffff; }
+.badge.purple:hover { background: #3C3489; color: #ffffff; }
+.badge.green:hover  { background: #085041; color: #ffffff; }
+.badge.amber:hover  { background: #633806; color: #ffffff; }
+
 .info {
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
   gap: 8px;
   text-align: left;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .info-item {
@@ -90,7 +111,7 @@ body {
   align-items: center;
   gap: 8px;
   font-size: 13px;
-  color: #666;
+  color: #ffffff;
 }
 
 .info-item i {
@@ -98,33 +119,37 @@ body {
 }
 
 .info-item a {
-  color: #185FA5;
+  color: #25D366;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .info-item a:hover {
-  color: #006994;
-  text-decoration: underline;
+  color: #ffffff;
 }
 
 .btn {
   margin-top: 1.25rem;
   width: 100%;
-  padding: 8px;
-  font-size: 13px;
+  max-width: 400px;
+  padding: 12px;
+  font-size: 14px;
   cursor: pointer;
-  border: 1px solid #ccc;
+  border: 2px solid #25D366;
   border-radius: 8px;
-  background: transparent;
+  background: #25D366;
   transition: all 0.2s ease;
   text-decoration: none;
   display: block;
-  color: #1a1a1a;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.25rem;
 }
 
 .btn:hover {
-  background: #25D366;
-  color: #ffffff;
-  border-color: #25D366;
+  background: transparent;
+  color: #25D366;
 }
